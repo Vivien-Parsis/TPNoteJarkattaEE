@@ -28,7 +28,7 @@ public class ActorController {
     @PostMapping
     public ResponseEntity<?> createUser(@RequestBody CreateActor createActor){
         service.create(createActor);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>(createActor,HttpStatus.CREATED);
     }
 
     @GetMapping("/{id}")

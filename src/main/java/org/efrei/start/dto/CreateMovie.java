@@ -2,7 +2,7 @@ package org.efrei.start.dto;
 
 import org.efrei.start.global.Category;
 
-public class CreateFilm {
+public class CreateMovie {
     private String title;
     private Category category;
 
